@@ -8,13 +8,13 @@ svm=pickle.load(open('svm_model.pkl','rb'))
 
 def classify(num):
     if num<0.5:
-        st.image('Images\Iris_Setosa.jpg')
+        st.image('Iris_Setosa.jpg')
         return 'Iris-Setosa'
     elif num <1.5:
-        st.image('Images\Iris_Versicolor.jpg')
+        st.image('Iris_Versicolor.jpg')
         return 'Iris-Versicolor'
     else:
-        st.image('Images\Iris_Virginica.jpg')
+        st.image('Iris_Virginica.jpg')
         return 'Iris-Virginica'
 def main():
     st.title("WELCOME TO CLASSIFICATION WORLD")
