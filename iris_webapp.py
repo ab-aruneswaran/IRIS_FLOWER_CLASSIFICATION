@@ -29,7 +29,7 @@ def main():
     pw=float(st.number_input('Enter Petal Width'))
     inputs=[[sl,sw,pl,pw]]
     options = pd.DataFrame({
-    'Model Name': ["Linear Regression", "Logistic Regression", "SVM"],
+    'Model Name': ["Linear Regression", "Logistic Regression"],
     })
     ml_name = st.selectbox("Choose Your ML Model", options)
     if st.button('Classify'):
