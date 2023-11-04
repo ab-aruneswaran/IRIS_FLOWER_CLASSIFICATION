@@ -2,9 +2,9 @@ import streamlit as st
 import pickle
 import pandas as pd
 
-lin_model=pickle.load(open('Models\lin_model.pkl','rb'))
-log_model=pickle.load(open('Models\log_model.pkl','rb'))
-svm=pickle.load(open('Models\svm_model.pkl','rb'))
+lin_model=pickle.load(open('ML_Models\lin_model.pkl','rb'))
+log_model=pickle.load(open('ML_Models\log_model.pkl','rb'))
+svm=pickle.load(open('ML_Models\svm_model.pkl','rb'))
 
 def classify(num):
     if num<0.5:
